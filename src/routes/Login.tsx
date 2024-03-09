@@ -46,9 +46,9 @@ const Login = () => {
 
         <div className="form-field">
           <input className="form-email" type="email" placeholder="Email address or username" />
-          <div className="form-password">
-            <input type="password" placeholder="password" />
-            <svg
+          <div className="form-password flex relative w-500px h-48px group justify-center items-center z-1001 pl-8">
+            <input type="password" placeholder="password" className="flex h-48px w-500x px-20 py-3 placeholder-gray-600 text-neutral-400 text-18px flex-none border border-neutral-primary-500 rounded focus:border-neutral-primary-500 outline-none" />
+            <svg className="flex absolute right-5"
               width="23"
               height="15"
               viewBox="0 0 23 15"

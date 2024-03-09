@@ -1,14 +1,17 @@
-import { Route, Routes } from 'react-router-dom';
-import Login from "./components/Login";
+import { Route, Routes, redirect } from 'react-router-dom';
+import Login from './routes/Login';
+import Sign from './routes/Sign';
+import Home from './routes/Home';
 
 const App = () => {
   return (
     <div>
-      <h1>Capstone project</h1>
-     
-      {/* <Routes>
+      <Routes>
+        <Route path='/home' element={<Home />} />
+        <Route loader={() => redirect('/login')} />
         <Route path='/login' element={<Login />} />
-      </Routes> */}
+        <Route path='/sign' element={<Sign />} />
+      </Routes>
     </div>
   )
 }
